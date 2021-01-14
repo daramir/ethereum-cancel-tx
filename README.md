@@ -10,6 +10,22 @@ This can also happen with file wallets that are used programatically, hence why 
 
 It is quite simple and is the recommended solution to override a transaction that is unlikely to be confirmed given the allowed gas price. One of the main inputs is the nonce, which is pre-populated with the number of transactions confirmed by the account. This value can be overriden by the user for more control over the issue.
 
+### How to use it?
+1. Clone repo locally.
+```bash
+git clone https://github.com/daramir/ethereum-cancel-tx.git
+```
+2. Install package.
+
+  In main folder... 
+ `npm install` or `yarn install`
+
+3. Run utility (-p optional)
+```bash
+node lib/cli.js -w /path/to/UTC--wallet.json -p /path/to/passfile.texty
+```
+
+
 ## Limitations
 
 This tool doesn't support hardware wallets, and most likely won't in the future.
