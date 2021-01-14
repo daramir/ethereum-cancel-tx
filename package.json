@@ -1,0 +1,17 @@
+{
+  "name": "ethereum-cancel-tx",
+  "version": "1.0.0",
+  "description": "Utility to free up the tx queue. Metamask doesn't support this fully",
+  "main": "lib/cli.js",
+  "author": "Danilo Ramirez",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "ethers": "^5.0.25",
+    "got": "^11.8.1",
+    "inquirer": "^7.3.3",
+    "path": "^0.12.7",
+    "yargs": "^16.2.0"
+  }
+}
